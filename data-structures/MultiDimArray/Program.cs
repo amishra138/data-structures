@@ -6,9 +6,26 @@ namespace MultiDimArray
     {
         static void Main(string[] args)
         {
-            JaggedArraysDemo();
-
+            //JaggedArraysDemo();
+            IterateOver(new[] { 1, 2, 3 });
             Console.ReadLine();
+        }
+
+        /// <summary>
+        /// compiler will mark this code as unsafe and garbage collector will not move this object anywhere
+        /// </summary>
+        /// <param name="array"></param>
+        private static unsafe void IterateOver(int[] array)
+        {
+            fixed (int* b = array)
+            {
+                int* p = b;
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(*p);
+                    p++;
+                }
+            }
         }
 
         private static void MultiDimArrays()
