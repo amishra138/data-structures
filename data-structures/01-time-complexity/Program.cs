@@ -7,6 +7,8 @@ namespace _01_time_complexity
     {
         static void Main(string[] args)
         {
+            ArrayTimeComplexity.AccessByIndex(new object[] { 1, 3, -2, 1, -3, 0, 2 });
+
             var watch = new Stopwatch();
             watch.Start();
 

@@ -12,7 +12,7 @@ namespace MultiDimArray
         }
 
         /// <summary>
-        /// compiler will mark this code as unsafe and garbage collector will not move this object anywhere
+        /// compiler will mark this code as unsafe and garbage collector will not move this objec
         /// </summary>
         /// <param name="array"></param>
         private static unsafe void IterateOver(int[] array)
