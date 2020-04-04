@@ -5,14 +5,20 @@ using System;
 namespace data_structure_test
 {
     [TestClass]
-    public class SortingTest
+    public class BubbleSortingTest
     {
         private const string Value = "\n";
 
         [TestMethod]
         public void BubbleSort_ValidInput_SortedInput()
         {
-            RunTestsForSortAlgorithm(Sorting.BubbleSort);
+            RunTestsForSortAlgorithm(BubbleSorting.Sort);
+        }
+
+        [TestMethod]
+        public void BubbleSort_ValidInput_Optimized_SortedInput()
+        {
+            RunTestsForSortAlgorithm(BubbleSorting.OptimizeSort);
         }
 
         private void RunTestsForSortAlgorithm(Action<int[]> sort)
