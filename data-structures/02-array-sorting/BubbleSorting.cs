@@ -15,7 +15,8 @@
             {
                 for (int i = 0; i < partIndex; i++)
                 {
-                    if (array[i] > array[i + 1])
+                    //if we add >= this algo will become unstable as relative order of duplicate values change
+                    if (array[i] > array[i + 1]) 
                     {
                         Swap(array, i, i + 1);
                     }
