@@ -10,68 +10,72 @@ Just download the code and open it in visual studio 2019 and build
 
 Visual Studio 2019
 Basic c# skills
-Data Structure Sorting Techniques
+Knowledge of basic data strucutre
 
+## Array Sorting
 
-### Installing
+Sorting is nothing but arranging the data in ascending or descending order. The term sorting came into picture, as humans realised the importance of searching quickly.
 
-A step by step series of examples that tell you how to get a development env running
+Sorting arranges data in a sequence which makes searching easier.
 
-Say what the step will be
+The two main criterias to judge which algorithm is better than the other have been:
+
+1. Time taken to sort the given data.
+2. Memory Space required to do so.
+
+### Different Sorting Algorithms
+
+* Bubble Sort
+* Insertion Sort
+* Selection Sort
+* Quick Sort
+* Merge Sort
+* Heap Sort
+
+### Bubble Sort
+
+It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+### Implementing Bubble Sort Algorithm
+
+Following are the steps involved in bubble sort(for sorting a given array in ascending order):
+
+* Starting with the first element(index = 0), compare the current element with the next element of the array.
+* If the current element is greater than the next element of the array, swap them.
+* If the current element is less than the next element, move to the next element. Repeat Step 1.
+
+### Optimized Bubble Sort Algorithm
+
+To optimize our bubble sort algorithm, we can introduce a flag to monitor whether elements are getting swapped inside the inner for loop.
+
+Hence, in the inner for loop, we check whether swapping of elements is taking place or not, everytime.
+
+If for a particular iteration, no swapping took place, it means the array has been sorted and we can jump out of the for loop, instead of executing all the iterations.
+
+### Complexity Analysis of Bubble Sort
+
+In Bubble Sort, n-1 comparisons will be done in the 1st pass, n-2 in 2nd pass, n-3 in 3rd pass and so on. So the total number of comparisons will be,
 
 ```
-Give the example
+Output:
+(n-1) + (n-2) + (n-3) + ..... + 3 + 2 + 1
+Sum = n(n-1)/2
+i.e O(n2)
 ```
 
-And repeat
+Hence the time complexity of Bubble Sort is O(n2).
 
-```
-until finished
-```
+* Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.
 
-End with an example of getting some data out of the system or using it for a little demo
+* Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
 
-## Running the tests
+* Auxiliary Space/ Space Complexity: O(1) - because only a single additional memory space is required i.e. for temp variable.
 
-Explain how to run the automated tests for this system
+* Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
 
-### Break down into end to end tests
+* Sorting In Place: Yes
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Arvind Mishra**
+* Stable: Yes
 
 ## License
 
@@ -80,5 +84,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Udemy
-* Inspiration
-* etc
