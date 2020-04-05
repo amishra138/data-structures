@@ -25,7 +25,7 @@ namespace _02_array_sorting
             }
         }
 
-        private static void PrintOut(int[] array)
+        public static void PrintOut(int[] array)
         {
             Console.WriteLine("---------TRACE---------");
             foreach (var element in array)
