@@ -65,17 +65,17 @@ i.e O(n2)
 
 Hence the time complexity of Bubble Sort is O(n2).
 
-* Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.
+* **Worst and Average Case Time Complexity: O(n*n).** Worst case occurs when array is reverse sorted.
 
-* Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
+* **Best Case Time Complexity: O(n).** Best case occurs when array is already sorted.
 
-* Auxiliary Space/ Space Complexity: O(1) - because only a single additional memory space is required i.e. for temp variable.
+* **Auxiliary Space/ Space Complexity: O(1)** Because only a single additional memory space is required i.e. for temp variable.
 
-* Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
+* **Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.**
 
-* Sorting In Place: Yes
+* **Sorting In Place: Yes**
 
-* Stable: Yes
+* **Stable: Yes**
 
 ## License
 

@@ -16,9 +16,9 @@
                 for (int i = 0; i < partIndex; i++)
                 {
                     //if we add >= this algo will become unstable as relative order of duplicate values change
-                    if (array[i] > array[i + 1]) 
+                    if (array[i] > array[i + 1])
                     {
-                        Swap(array, i, i + 1);
+                        CommonMethod.Swap(array, i, i + 1);
                     }
                 }
             }
@@ -37,7 +37,7 @@
                 {
                     if (array[j] > array[j + 1])
                     {
-                        Swap(array, j, j + 1);
+                        CommonMethod.Swap(array, j, j + 1);
                         swapped = true;
                     }
 
@@ -48,14 +48,6 @@
             }
         }
 
-        private static void Swap(int[] array, int i, int j)
-        {
-            if (i == j)
-                return;
 
-            int temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-        }
     }
 }
