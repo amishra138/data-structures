@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiDimArray", "MultiDimAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-array-sorting", "02-array-sorting\02-array-sorting.csproj", "{03C0969A-112C-4A51-AA01-83C6F3832190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-structure-test", "data-structure-test\data-structure-test.csproj", "{EA4B61BB-DAA7-4154-BCFC-CE674C07E797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "data-structure-test", "data-structure-test\data-structure-test.csproj", "{EA4B61BB-DAA7-4154-BCFC-CE674C07E797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-tree-structure", "03-tree-structure\03-tree-structure.csproj", "{B4D0C807-FA0C-440D-87A8-B725147233AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EA4B61BB-DAA7-4154-BCFC-CE674C07E797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA4B61BB-DAA7-4154-BCFC-CE674C07E797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA4B61BB-DAA7-4154-BCFC-CE674C07E797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D0C807-FA0C-440D-87A8-B725147233AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D0C807-FA0C-440D-87A8-B725147233AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D0C807-FA0C-440D-87A8-B725147233AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D0C807-FA0C-440D-87A8-B725147233AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

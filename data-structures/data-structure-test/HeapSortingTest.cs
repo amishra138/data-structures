@@ -9,7 +9,11 @@ namespace data_structure_test
         [TestMethod]
         public void Test_Heap_Sort_When_Input_IsCorrect()
         {
-            CommonMethod.RunTestsForSortAlgorithm(HeapSorting.Sort);
+            int[] array = new int[] { 10, 20, 5, 6, 9, 7 };
+
+            HeapSorting.Sort(array);
+
+            //CommonMethod.RunTestsForSortAlgorithm(HeapSorting.Sort);
         }
     }
 }

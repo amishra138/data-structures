@@ -11,5 +11,11 @@ namespace data_structure_test
         {
             CommonMethod.RunTestsForSortAlgorithm(MergeSorting.Sort);
         }
+
+        [TestMethod]
+        public void Test_Merge_Sort_When_Valid_Input1()
+        {
+            MergeSorting.Sort(new int[] { 4, 3, 2, 10, 12, 1, 5, 6 });
+        }
     }
 }

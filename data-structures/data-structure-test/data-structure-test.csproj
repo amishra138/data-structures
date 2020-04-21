@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\02-array-sorting\02-array-sorting.csproj" />
+    <ProjectReference Include="..\03-tree-structure\03-tree-structure.csproj" />
   </ItemGroup>
 
 </Project>
