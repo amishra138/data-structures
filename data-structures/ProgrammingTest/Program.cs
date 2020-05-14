@@ -1,4 +1,5 @@
-﻿using ProgrammingTest.List;
+﻿using ProgrammingTest.Array;
+using ProgrammingTest.List;
 using System;
 using System.Collections.Generic;
 
@@ -28,9 +29,17 @@ namespace ProgrammingTest
             ListExtensions.RunProgram();
             LineSeperator();
 
+            //find non repeating elements from array
+            new FindNonRepeatingElementsinArray().Get2NonRepeatingNos(new int[] { 1, 3, 6, 3, 10, 1,4 }, 1, 3);
+            LineSeperator();
+
+            //reverse sentence
+            new StringManipulation().ReverseSentence("My name is Arvind Mishra");
             Console.ReadLine();
         }
 
         static void LineSeperator() => Console.WriteLine("-----------------------------------------------------------------------------------------------------");
+
+
     }
 }
