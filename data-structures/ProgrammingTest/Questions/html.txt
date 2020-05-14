@@ -1,0 +1,37 @@
+﻿<table>
+        <tbody>
+        <tr>
+            <td style="color: #ff00ff; background-color:#FFFFFF">Q</TD>
+            <td style="background-color: #442244; color: #442244">Y</td>
+            <td style="color: #FFFF00; background-color:#442244">A</td>
+        </tr>
+        <tr>
+            <td style="color: #FFEEFE; background-color:#990000">Q</td>
+            <td style="color: #FFFF00; background-color:#FF0">M</td>
+            <td style="color: #000000; background-color:#FF7777">O</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+Ans - Function to print desired ouput
+function solution() {
+    // write your code in Javascript
+    //
+    // you can access DOM Tree using DOM Object Model:
+    //    document.getElementsByTagName
+    // or using jQuery:
+    var content='';
+    $('table > tbody  > tr > td').each(function(index, td) { 
+      if($(td).css('color') != $(td).css('background-color'))
+      {
+        content+= $(td).html()
+      }
+    });
+    //
+    // please note that element.innerText is not supported,
+    // you can use element.textContent instead.
+    console.log(content);
+}
+
+solution();
