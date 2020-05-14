@@ -1,4 +1,6 @@
-﻿namespace ProgrammingTest
+﻿using System;
+
+namespace ProgrammingTest
 {
     /// <summary>
     /// Program to count number of nodes in a linked list
@@ -6,6 +8,20 @@
     public class LinkedList
     {
         Node head;
+
+        public void RunProgram()
+        {
+            LinkedList llist = new LinkedList();
+            llist.Push(1);
+            llist.Push(3);
+            llist.Push(1);
+            llist.Push(2);
+            llist.Push(1);
+
+            Console.WriteLine($"Linked list count by iterative method: {llist.GetCountByInterative()}");
+
+            Console.WriteLine($"Linked list count by iterative method: {llist.GetCountByRecursive()}");
+        }
 
         public void Push(int value)
         {

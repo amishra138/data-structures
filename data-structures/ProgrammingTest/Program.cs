@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProgrammingTest.List;
+using System;
+using System.Collections.Generic;
 
 namespace ProgrammingTest
 {
@@ -7,32 +9,28 @@ namespace ProgrammingTest
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to programming test!");
+            LineSeperator();
 
-            #region String Generator
-            //string result = StringGenerator.GenerateString(5, 3);
+            //Generate string in pattern
+            string result = StringGenerator.GenerateString(5, 3);
+            Console.WriteLine("Result is - " + result);
+            LineSeperator();
 
-            //Console.WriteLine("Result is - " + result);
-            #endregion
+            //Find Pair in Array whose sum is provided as input
+            Console.WriteLine(FindPairInArray.Find(new int[] { 1, 5, 6, 8, 10, 15 }, 20));
+            LineSeperator();
 
-            #region Find Pair in Array whose sum is provided as input
-            //Console.WriteLine(FindPairInArray.Find(new int[] { 1, 5, 6, 8, 10, 15 }, 20));
-            #endregion
+            //Linked List: Length Count
+            (new LinkedList()).RunProgram();
+            LineSeperator();
 
-            #region Linked List: Length Count
-            LinkedList llist = new LinkedList();
-            llist.Push(1);
-            llist.Push(3);
-            llist.Push(1);
-            llist.Push(2);
-            llist.Push(1);
-
-            Console.WriteLine($"Linked list count by iterative method: {llist.GetCountByInterative()}");
-
-            Console.WriteLine($"Linked list count by iterative method: {llist.GetCountByRecursive()}");
-
-            #endregion
+            //Sort list of dates
+            ListExtensions.RunProgram();
+            LineSeperator();
 
             Console.ReadLine();
         }
+
+        static void LineSeperator() => Console.WriteLine("-----------------------------------------------------------------------------------------------------");
     }
 }
