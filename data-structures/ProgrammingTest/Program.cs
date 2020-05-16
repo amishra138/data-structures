@@ -35,6 +35,13 @@ namespace ProgrammingTest
 
             //reverse sentence
             new StringManipulation().ReverseSentence("My name is Arvind Mishra");
+            LineSeperator();
+
+            //rotate array
+            ArrayRotation.RotateArray();
+            LineSeperator();
+
+
             Console.ReadLine();
         }
 
