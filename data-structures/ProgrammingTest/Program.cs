@@ -1,7 +1,6 @@
 ﻿using ProgrammingTest.Array;
 using ProgrammingTest.List;
 using System;
-using System.Collections.Generic;
 
 namespace ProgrammingTest
 {
@@ -41,6 +40,13 @@ namespace ProgrammingTest
             ArrayRotation.RotateArray();
             LineSeperator();
 
+            //Dart Game Input Test
+            var dartThrows = new string[] { "D20", "T20", "T20", "T20", "T10", "1", "D16", "17" };
+
+            int dartScore = (new DartGame()).CalculateScore(dartThrows, out string message);
+
+
+            Console.WriteLine($"Dart score : {dartScore}, {message}");
 
             Console.ReadLine();
         }
